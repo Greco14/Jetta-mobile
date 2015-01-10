@@ -1,0 +1,1 @@
+Main={init:function(){colorpick=new Colorpick,colorpick.init(),scroll=new Scroll,scroll.init()}},$(function(){Main.init()}),function(e,n,o){var c,i=e.getElementsByTagName(n)[0];e.getElementById(o)||(c=e.createElement(n),c.id=o,c.src="//connect.facebook.net/en_US/sdk.js",i.parentNode.insertBefore(c,i))}(document,"script","facebook-jssdk");

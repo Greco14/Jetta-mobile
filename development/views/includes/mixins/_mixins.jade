@@ -1,0 +1,26 @@
+mixin shareIcon(params)
+	case params.name
+		when "twitter"
+			a(href="#", class="#{params.name}-share", class="#{params.id}-share")
+				svg(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='46px', height='46px', viewbox='0 0 23 23', style='enable-background:new 0 0 23 23;', xml:space='preserve')
+					style(type='text/css').
+						<![CDATA[
+							.st0{fill:#4CBFEE;}
+						]]>
+					g
+						path.st0(d='M11.6,0.6c-6.1,0-11,4.9-11,11c0,6.1,4.9,11,11,11s11-4.9,11-11C22.6,5.5,17.6,0.6,11.6,0.6z M16.3,9.2\ c0,0.1,0,0.2,0,0.3c0,3.2-2.4,6.9-6.9,6.9c-1.4,0-2.6-0.4-3.7-1.1c0.2,0,0.4,0,0.6,0c1.1,0,2.2-0.4,3-1c-1.1,0-2-0.7-2.3-1.7\ c0.1,0,0.3,0,0.5,0c0.2,0,0.4,0,0.6-0.1c-1.1-0.2-2-1.2-2-2.4v0c0,0.2,0.8,0.3,1.2,0.3c-0.7-0.4-1-1.2-1-2c0-0.4,0.1-0.9,0.3-1.2\ c1.2,1.5,3,2.4,5,2.5c0-0.2-0.1-0.4-0.1-0.6c0-1.3,1.1-2.4,2.4-2.4c0.7,0,1.3,0.3,1.8,0.8c0.5-0.1,1.1-0.3,1.5-0.6\ c-0.2,0.6-0.6,1-1.1,1.3c0.5-0.1,1-0.2,1.4-0.4C17.1,8.4,16.7,8.8,16.3,9.2z')
+
+		when "facebook"
+			a(href="#", class="#{params.name}-share", class="#{params.id}-share")
+
+				svg(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='46px', height='46px', viewbox='0 0 23 23', style='enable-background:new 0 0 23 23;', xml:space='preserve')
+					style(type='text/css').
+						<![CDATA[
+							.st0{fill:#62C7F0;}
+						]]>
+					g
+						path.st0(d='M11.5,0.5c-6.1,0-11,4.9-11,11c0,6.1,4.9,11,11,11c6.1,0,11-4.9,11-11C22.5,5.4,17.6,0.5,11.5,0.5z M14.5,11.8\ h-1.9v5.9h-2.2v-5.9H8.2V9.7h2.1V8.2c0-1.9,1.1-3,2.8-3c0.8,0,1.4,0.1,1.6,0.1v2h-1.1c-0.9,0-1.1,0.4-1.1,1.1v1.2h2.2L14.5,11.8z')
+
+mixin configurame(params)
+	a(href="#{params.link}")
+		.btnConfigura.center-h
